@@ -54,8 +54,6 @@ public class GooeyPlugin extends JavaPlugin implements CommandExecutor, Listener
 	public void onEnable() {
 		super.onEnable();
 		
-		getLogger().info("Has debug: ");
-		
 		if(!getConfig().getBoolean("dont-load-example", false)){
 			saveDefaultConfig();
 			getConfig().options().copyDefaults(true);
@@ -82,6 +80,7 @@ public class GooeyPlugin extends JavaPlugin implements CommandExecutor, Listener
 
 		String menuKey = args[0];
 		Key menuRoot = key(MENUS_ROOT).__(menuKey);
+		String menuName = getConfig().getString(menuRoot.end(NAME), "");
 
 		if (!getConfig().contains(menuRoot.val)) {
 			printUsage(sender);
@@ -109,8 +108,8 @@ public class GooeyPlugin extends JavaPlugin implements CommandExecutor, Listener
 		size = size > 0 ? size : 1;
 
 		int rows = (menuItems.size() / INVENTORY_COLUMNS) + (size % INVENTORY_COLUMNS > 0 ? 1 : 0);
-
-		String menuName = getConfig().getString(menuRoot.end(NAME), "");
+		
+		debug("menuName: " + menuName);
 
 		Inventory inventory = Bukkit.createInventory(null, rows * INVENTORY_COLUMNS,
 				Invis.prependKey(menuName, menuKey + GOOEY_INVIS_KEY));
