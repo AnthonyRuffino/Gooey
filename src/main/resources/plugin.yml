@@ -1,0 +1,12 @@
+name: Gooey
+version: 1.0.0
+main:  com.blocktyper.gooey.GooeyPlugin
+author: spaarkimus
+website: blocktyper.com
+database: false
+description: Generic GUI builder.
+
+
+commands:
+  gui: 
+    description: Shows configured inventory menus

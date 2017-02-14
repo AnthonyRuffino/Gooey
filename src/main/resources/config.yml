@@ -1,0 +1,52 @@
+debug: false
+dont-load-example: false
+menus.example.name: §5Example
+menus.example.items.item1.name: §1Item 1
+menus.example.items.item1.material: STONE
+menus.example.items.item1.material-data: 1
+menus.example.items.item1.info: 
+  - '§1Info-1: Line-1'
+  - §1Info-1 Line-2
+  - §1Info-1 Line-3
+menus.example.items.item2.name: §2Item 2
+menus.example.items.item2.material: STONE
+menus.example.items.item2.material-data: 2
+menus.example.items.item2.info: 
+  - '§2Info-2: Line-1'
+  - §2Info-2 Line-2
+  - §2Info-2 Line-3
+menus.example.items.skip1.material: AIR
+menus.example.items.skip1.repeat: 7
+menus.example.items.seperator1.name: '---'
+menus.example.items.seperator1.material: STAINED_GLASS_PANE
+menus.example.items.seperator1.material-data: 15
+menus.example.items.seperator1.repeat: 9
+menus.example.items.item3.name: §3Item 3
+menus.example.items.item3.material: STONE
+menus.example.items.item3.material-data: 3
+menus.example.items.item3.info: 
+  - '§3Info-3: Line-1'
+  - §3Info-3 Line-2
+  - §3Info-3 Line-3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
