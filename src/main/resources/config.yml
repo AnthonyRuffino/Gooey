@@ -24,6 +24,7 @@ menus.example.items.seperator1.repeat: 9
 menus.example.items.item3.name: §3Item 3
 menus.example.items.item3.material: STONE
 menus.example.items.item3.material-data: 3
+menus.example.items.item3.handler: test
 menus.example.items.item3.info: 
   - '§3Info-3: Line-1'
   - §3Info-3 Line-2
